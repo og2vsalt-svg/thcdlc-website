@@ -2,9 +2,9 @@
 
 Official one-page website for **thcdlc** — a Minecraft 1.21.4 PvP cheat and visual improvement client.
 
-- Lifetime access only: **£9.99 GBP**
+- Lifetime access only: **£4.99 GBP**
 - Payments: **SOL (Solana)** and **PayPal**
-- All purchases handled via Discord
+- All purchases handled via Discord: https://discord.gg/PRm37py4j2
 
 ## Deploy
 
