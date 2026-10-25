@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>thcdlc — Minecraft 1.21.4 PvP Client</title>
   <meta name="description" content="thcdlc is a sleek Minecraft 1.21.4 PvP cheat and visual improvement client. Lifetime access only. Pay with SOL or PayPal via Discord." />
-  <meta name="theme-color" content="#050507" />
+  <meta name="theme-color" content="#030305" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient"></div>
-  <div class="noise"></div>
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grid-overlay"></div>
+  </div>
 
   <header class="nav">
     <div class="nav-inner">
@@ -24,119 +28,119 @@
         <a href="#modules">Modules</a>
         <a href="#pricing">Pricing</a>
       </nav>
-      <a href="#buy" class="btn btn-pill">Get Access</a>
+      <a href="#buy" class="btn btn-nav">Get Access</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-inner">
-        <div class="chip"><span class="chip-dot"></span> Minecraft 1.21.4 · Coming Soon</div>
-        <h1>Dominate PvP.<br /><span class="accent">Look better doing it.</span></h1>
-        <p class="lede">Lightweight PvP modules and clean visuals built for 1.21.4. One payment. Lifetime access.</p>
-        <div class="hero-actions">
-          <a href="#pricing" class="btn btn-primary">View Pricing — £4.99</a>
-          <a href="#buy" class="btn btn-secondary">Buy via Discord</a>
-        </div>
-        <div class="hero-meta">
-          <span>Lifetime</span>
-          <span class="sep"></span>
-          <span>SOL &amp; PayPal</span>
-          <span class="sep"></span>
-          <span>Discord only</span>
-        </div>
-        <div class="stats">
-          <div class="stat"><span class="stat-val">135</span><span class="stat-label">Modules</span></div>
-          <div class="stat-div"></div>
-          <div class="stat"><span class="stat-val">£4.99</span><span class="stat-label">Lifetime</span></div>
-          <div class="stat-div"></div>
-          <div class="stat"><span class="stat-val">1.21.4</span><span class="stat-label">Version</span></div>
-        </div>
+      <div class="hero-badge">
+        <span class="live"></span>
+        Minecraft 1.21.4 · Coming Soon
+      </div>
+      <h1>
+        <span class="line">Dominate PvP.</span>
+        <span class="line fade">Look better doing it.</span>
+      </h1>
+      <p class="lede">135 modules. Lifetime access. Built for competitive 1.21.4 — pay once with SOL or PayPal via Discord.</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary">
+          <span>Lifetime — £4.99</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#buy" class="btn btn-ghost">Buy via Discord</a>
+      </div>
+      <div class="hero-pills">
+        <span>Lifetime only</span>
+        <span>SOL &amp; PayPal</span>
+        <span>Discord delivery</span>
       </div>
     </section>
 
     <section id="showcase" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Showcase</p>
-        <h2>See it in action</h2>
-        <p>Real client UI and in-game visuals.</p>
+      <div class="section-bar">
+        <span class="num">01</span>
+        <div>
+          <h2>Showcase</h2>
+          <p>Real client UI and in-game visuals.</p>
+        </div>
       </div>
-      <div class="showcase-grid">
-        <figure class="shot glass">
-          <div class="shot-frame">
-            <img src="https://pomf2.lain.la/f/02wcrgf6.webp" alt="thcdlc module menu" loading="lazy" />
-          </div>
+      <div class="show-grid">
+        <figure class="show-card show-main">
+          <img src="https://pomf2.lain.la/f/02wcrgf6.webp" alt="thcdlc module menu" loading="lazy" />
           <figcaption>
             <strong>Module menu</strong>
             <span>Combat · Movement · Visual · Client</span>
           </figcaption>
         </figure>
-        <figure class="shot glass">
-          <div class="shot-frame">
+        <div class="show-side">
+          <figure class="show-card">
             <img src="https://pomf2.lain.la/f/5r18ies7.webp" alt="thcdlc title screen" loading="lazy" />
-          </div>
-          <figcaption>
-            <strong>Title experience</strong>
-            <span>Custom menu with media player</span>
-          </figcaption>
-        </figure>
-        <figure class="shot glass">
-          <div class="shot-frame">
+            <figcaption>
+              <strong>Title experience</strong>
+              <span>Custom menu + media</span>
+            </figcaption>
+          </figure>
+          <figure class="show-card">
             <img src="https://pomf2.lain.la/f/niod7e8d.webp" alt="thcdlc in-game visuals" loading="lazy" />
-          </div>
-          <figcaption>
-            <strong>In-game visuals</strong>
-            <span>Effects · HUD · Combat feedback</span>
-          </figcaption>
-        </figure>
+            <figcaption>
+              <strong>In-game visuals</strong>
+              <span>Effects · HUD · Combat</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <section id="features" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Features</p>
-        <h2>What you get</h2>
-        <p>Focused on competitive PvP and clean visuals.</p>
+      <div class="section-bar">
+        <span class="num">02</span>
+        <div>
+          <h2>What you get</h2>
+          <p>Focused on competitive PvP and clean visuals.</p>
+        </div>
       </div>
-      <div class="features">
-        <article class="feature glass">
-          <div class="icon-wrap">⚔</div>
-          <h3>PvP Modules</h3>
-          <p>Aura, AimAssist, TriggerBot, Velocity, Hitboxes and more — tuned for 1.21.4.</p>
+      <div class="bento">
+        <article class="bento-card bento-lg">
+          <div class="bento-icon">⚔</div>
+          <h3>PvP modules</h3>
+          <p>Aura, AimAssist, TriggerBot, Velocity, Hitboxes and more — tuned for 1.21.4 combat.</p>
         </article>
-        <article class="feature glass">
-          <div class="icon-wrap">👁</div>
-          <h3>Visual Improvements</h3>
-          <p>Clean HUD, effects, and modern presentation without heavy shaders.</p>
+        <article class="bento-card">
+          <div class="bento-icon">👁</div>
+          <h3>Visuals</h3>
+          <p>Clean HUD, effects and modern presentation without heavy shaders.</p>
         </article>
-        <article class="feature glass">
-          <div class="icon-wrap">⚡</div>
+        <article class="bento-card">
+          <div class="bento-icon">⚡</div>
           <h3>Lightweight</h3>
           <p>Built for performance so you stay focused on the fight.</p>
         </article>
-        <article class="feature glass">
-          <div class="icon-wrap">🔒</div>
-          <h3>Lifetime Access</h3>
-          <p>Pay once. Own it forever. Updates included for the life of the client.</p>
+        <article class="bento-card">
+          <div class="bento-icon">🔒</div>
+          <h3>Lifetime</h3>
+          <p>Pay once. Own it forever. Updates included.</p>
         </article>
-        <article class="feature glass">
-          <div class="icon-wrap">💬</div>
-          <h3>Discord Support</h3>
-          <p>Purchases and support happen in Discord. Fast delivery and direct help.</p>
+        <article class="bento-card">
+          <div class="bento-icon">💬</div>
+          <h3>Discord</h3>
+          <p>Purchases and support handled in Discord.</p>
         </article>
-        <article class="feature glass">
-          <div class="icon-wrap">◎</div>
+        <article class="bento-card bento-wide">
+          <div class="bento-icon">◎</div>
           <h3>SOL &amp; PayPal</h3>
-          <p>Pay with Solana or PayPal. Both handled securely through Discord.</p>
+          <p>Both payment methods accepted. Handled securely through Discord tickets only.</p>
         </article>
       </div>
     </section>
 
     <section id="modules" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Features</p>
-        <h2>All modules</h2>
-        <p>135 modules across Combat, Movement, Visuals, Player and Utility. Expand a category to browse.</p>
+      <div class="section-bar">
+        <span class="num">03</span>
+        <div>
+          <h2>All modules</h2>
+          <p>135 modules across five categories. Expand to browse.</p>
+        </div>
       </div>
       <div class="modules-wrap">
         <details class="mod-cat glass" open>
@@ -185,7 +189,7 @@
               <li class="mod-item"><span class="mod-name">Water Speed</span><span class="mod-ctrl" title="Controls">3</span></li>
               <li class="mod-item"><span class="mod-name">Speed</span><span class="mod-ctrl" title="Controls">7</span></li>
               <li class="mod-item"><span class="mod-name">Timer</span><span class="mod-ctrl" title="Controls">2</span></li>
-              <li class="mod-item"><span class="mod-name">No Slow</span><span class="mod-ctrl" title="Controls">1</span></li>
+              <li class="mod-item"><span class="mod-name">No Slow</span><span class="mod-ctrl" title="Controls">2</span></li>
               <li class="mod-item"><span class="mod-name">Spider</span><span class="mod-ctrl" title="Controls">1</span></li>
               <li class="mod-item"><span class="mod-name">FakeLag</span><span class="mod-ctrl" title="Controls">11</span></li>
           </ul>
@@ -323,56 +327,67 @@
     </section>
 
     <section id="pricing" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Pricing</p>
-        <h2>Simple &amp; fair</h2>
-        <p>One plan. Lifetime. No subscriptions.</p>
+      <div class="section-bar">
+        <span class="num">04</span>
+        <div>
+          <h2>Simple pricing</h2>
+          <p>One plan. Lifetime. No subscriptions.</p>
+        </div>
       </div>
-      <div class="price-wrap">
-        <div class="price-card glass">
-          <div class="price-label">Lifetime</div>
-          <div class="price-row">
-            <span class="currency">£</span>
-            <span class="amount">4.99</span>
+      <div class="price-shell">
+        <div class="price-glow"></div>
+        <div class="price-card">
+          <div class="price-top">
+            <span class="price-tag">Lifetime</span>
+            <div class="price-amount">
+              <span class="sym">£</span>
+              <span class="num">4.99</span>
+            </div>
+            <p class="price-sub">One-time · GBP</p>
           </div>
-          <p class="price-note">One-time payment in GBP</p>
-          <ul class="price-list">
+          <ul class="price-perks">
             <li>Full client access</li>
-            <li>All PvP + visual modules</li>
+            <li>All 135 modules</li>
             <li>Future updates included</li>
             <li>Discord delivery &amp; support</li>
             <li>Pay with <strong>SOL</strong> or <strong>PayPal</strong></li>
           </ul>
-          <a href="#buy" class="btn btn-primary btn-block">Get Lifetime Access</a>
+          <a href="#buy" class="btn btn-primary btn-block">
+            <span>Get Lifetime Access</span>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="buy" class="section">
-      <div class="section-head">
-        <p class="eyebrow">Purchase</p>
-        <h2>How to buy</h2>
-        <p>All payments are handled exclusively through Discord.</p>
+      <div class="section-bar">
+        <span class="num">05</span>
+        <div>
+          <h2>How to buy</h2>
+          <p>All payments are handled exclusively through Discord.</p>
+        </div>
       </div>
-      <div class="steps">
-        <div class="step glass">
-          <span class="step-num">1</span>
+      <div class="buy-steps">
+        <div class="buy-step">
+          <span class="step-n">1</span>
           <h3>Join Discord</h3>
           <p>Open the official thcdlc server.</p>
         </div>
-        <div class="step glass">
-          <span class="step-num">2</span>
+        <div class="buy-step">
+          <span class="step-n">2</span>
           <h3>Open a ticket</h3>
           <p>Choose SOL or PayPal in a purchase ticket.</p>
         </div>
-        <div class="step glass">
-          <span class="step-num">3</span>
+        <div class="buy-step">
+          <span class="step-n">3</span>
           <h3>Pay &amp; receive</h3>
           <p>License delivered instantly in Discord.</p>
         </div>
       </div>
-      <div class="buy-cta">
-        <a href="https://discord.gg/PRm37py4j2" class="btn btn-discord" target="_blank" rel="noopener">Join Discord to Purchase</a>
+      <div class="buy-action">
+        <a href="https://discord.gg/PRm37py4j2" class="btn btn-discord" target="_blank" rel="noopener">
+          Join Discord to Purchase
+        </a>
         <p class="buy-note">Payments accepted: <strong>SOL (Solana)</strong> and <strong>PayPal</strong> only.</p>
       </div>
     </section>
@@ -380,7 +395,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="logo">thc<span>dlc</span></div>
+      <a href="#" class="logo">thc<span>dlc</span></a>
       <p>Minecraft 1.21.4 PvP &amp; Visual Client · Lifetime · SOL &amp; PayPal via Discord</p>
       <p class="disclaimer">Not affiliated with Mojang or Microsoft. Use at your own risk. For educational and private server use.</p>
     </div>
