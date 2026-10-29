@@ -1,1 +1,258 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>thcdlc — Minecraft 1.21.4 PvP Client</title>
+  <meta name="description" content="thcdlc is a sleek Minecraft 1.21.4 PvP cheat and visual improvement client. Lifetime access only. Pay with SOL or PayPal via Discord." />
+  <meta name="theme-color" content="#030305" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">thc<span>dlc</span></a>
+      <nav class="nav-links">
+        <a href="#showcase">Showcase</a>
+        <a href="#features">Features</a>
+        <a href="#modules">Modules</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="#buy" class="btn btn-nav">Get Access</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="live"></span>
+        Minecraft 1.21.4 · Coming Soon
+      </div>
+      <h1>
+        <span class="line">Dominate PvP.</span>
+        <span class="line fade">Look better doing it.</span>
+      </h1>
+      <p class="lede">220 modules. Lifetime access. Built for competitive 1.21.4 — pay once with SOL or PayPal via Discord.</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary">
+          <span>Lifetime — £4.99</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#buy" class="btn btn-ghost">Buy via Discord</a>
+      </div>
+      <div class="hero-pills">
+        <span>Lifetime only</span>
+        <span>SOL & PayPal</span>
+        <span>Discord delivery</span>
+      </div>
+    </section>
+
+    <section id="showcase" class="section">
+      <div class="section-bar">
+        <span class="num">01</span>
+        <div>
+          <h2>Showcase</h2>
+          <p>Real client UI and in-game visuals.</p>
+        </div>
+      </div>
+      <div class="show-grid">
+        <figure class="show-card show-main">
+          <img src="https://pomf2.lain.la/f/4r0idv5f.webp" alt="thcdlc client GUI" loading="lazy" />
+          <figcaption>
+            <strong>Client GUI</strong>
+            <span>Modules · Customize · Themes & fonts</span>
+          </figcaption>
+        </figure>
+        <div class="show-side">
+          <figure class="show-card">
+            <img src="https://pomf2.lain.la/f/5r18ies7.webp" alt="thcdlc title screen" loading="lazy" />
+            <figcaption>
+              <strong>Title experience</strong>
+              <span>Custom menu + media</span>
+            </figcaption>
+          </figure>
+          <figure class="show-card">
+            <img src="https://pomf2.lain.la/f/niod7e8d.webp" alt="thcdlc in-game visuals" loading="lazy" />
+            <figcaption>
+              <strong>In-game visuals</strong>
+              <span>Effects · HUD · Combat</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-bar">
+        <span class="num">02</span>
+        <div>
+          <h2>What you get</h2>
+          <p>Focused on competitive PvP and clean visuals.</p>
+        </div>
+      </div>
+      <div class="bento">
+        <article class="bento-card bento-lg">
+          <div class="bento-icon">⚔</div>
+          <h3>PvP modules</h3>
+          <p>Aura, AimAssist, TriggerBot, Velocity, Hitboxes and more — tuned for 1.21.4 combat.</p>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon">👁</div>
+          <h3>Visuals</h3>
+          <p>Clean HUD, effects and modern presentation without heavy shaders.</p>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon">⚡</div>
+          <h3>Lightweight</h3>
+          <p>Built for performance so you stay focused on the fight.</p>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon">🔒</div>
+          <h3>Lifetime</h3>
+          <p>Pay once. Own it forever. Updates included.</p>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon">💬</div>
+          <h3>Discord</h3>
+          <p>Purchases and support handled in Discord.</p>
+        </article>
+        <article class="bento-card bento-wide">
+          <div class="bento-icon">◎</div>
+          <h3>SOL & PayPal</h3>
+          <p>Both payment methods accepted. Handled securely through Discord tickets only.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="modules" class="section">
+      <div class="section-bar">
+        <span class="num">03</span>
+        <div>
+          <h2>All modules</h2>
+          <p>220 modules across Combat, Movement, Visuals, Player and Utility. Expand to browse.</p>
+        </div>
+      </div>
+      <div class="modules-wrap" id="modules-root"></div>
+    </section>
+
+<script>
+(function() {
+  const data = {"Combat":[{"name":"Aura","controls":31},{"name":"Auto Totem","controls":20},{"name":"Auto Trap","controls":18},{"name":"Auto Web","controls":20},{"name":"TriggerBot","controls":13},{"name":"Auto GApple","controls":2},{"name":"AimAssist","controls":13},{"name":"Auto Potion","controls":5},{"name":"Anti Bot","controls":2},{"name":"Velocity","controls":6},{"name":"Auto Armor","controls":2},{"name":"Auto Dripstone","controls":2},{"name":"Error Killer","controls":3},{"name":"Back Track","controls":7},{"name":"Knockback Displacement","controls":7},{"name":"Hitboxes","controls":3},{"name":"Anchor Macro","controls":13},{"name":"Crystal Optimizer","controls":6},{"name":"Auto TNT Cart","controls":9},{"name":"Mace Swap","controls":15},{"name":"Auto Clicker","controls":6},{"name":"Auto Crystal","controls":8},{"name":"Inv Totem","controls":6},{"name":"Double Anchor","controls":6},{"name":"Hover Totem","controls":5},{"name":"Low Health Backpedal","controls":2},{"name":"Low Health Slot","controls":4},{"name":"Mace Bomber","controls":5},{"name":"Panic Slot","controls":2},{"name":"Shield Breaker","controls":4},{"name":"Reach","controls":2},{"name":"Auto Weapon","controls":3},{"name":"Fast XP","controls":3}],"Movement":[{"name":"Auto Sprint","controls":1},{"name":"Wind Hop","controls":4},{"name":"No Web","controls":1},{"name":"Air Stuck","controls":2},{"name":"Flight","controls":3},{"name":"High Jump","controls":1},{"name":"Strafe","controls":12},{"name":"Water Speed","controls":3},{"name":"Speed","controls":7},{"name":"Timer","controls":2},{"name":"No Slow","controls":2},{"name":"Spider","controls":1},{"name":"FakeLag","controls":11}],"Visuals":[{"name":"Menu","controls":6},{"name":"ESP","controls":2},{"name":"Chams","controls":34},{"name":"Removals","controls":5},{"name":"Beautifully","controls":2},{"name":"Ambience","controls":55},{"name":"Sky","controls":51},{"name":"Swing Animation","controls":3},{"name":"Item Inspect","controls":6},{"name":"Show Lore","controls":3},{"name":"Friend Markers","controls":2},{"name":"Tracers","controls":17},{"name":"Trails","controls":19},{"name":"TNT Timer","controls":1},{"name":"View Model","controls":1},{"name":"Trap ESP","controls":5},{"name":"Interface","controls":12},{"name":"Custom Chat","controls":2},{"name":"Target ESP","controls":31},{"name":"PickBlowup","controls":3},{"name":"Storage ESP","controls":4},{"name":"XRay","controls":16},{"name":"Anti Invisible","controls":2},{"name":"Custom Fog","controls":11},{"name":"World","controls":13},{"name":"Lyrics 3D","controls":10},{"name":"Kill Effects","controls":17},{"name":"Particles","controls":24},{"name":"Pop Chams","controls":18},{"name":"Aspect Ratio","controls":2},{"name":"FreeLook","controls":3},{"name":"Zoom","controls":6},{"name":"Prediction","controls":6},{"name":"Block Outline","controls":17},{"name":"China Hat","controls":9},{"name":"Jump Circles","controls":33},{"name":"Glass Vapor","controls":10},{"name":"Armor Glass","controls":7},{"name":"Pet","controls":10},{"name":"LogoutSpot","controls":9},{"name":"Item Physics","controls":4},{"name":"Crosshair","controls":26},{"name":"Custom Hotbar","controls":5},{"name":"Custom Swords","controls":3},{"name":"ScoreboardTweaks","controls":43},{"name":"Capes","controls":8},{"name":"SkinChanger","controls":7},{"name":"Hands Shader","controls":18},{"name":"Player Visibility","controls":2},{"name":"Waypoints","controls":2},{"name":"Larp Ana","controls":4},{"name":"Armour Trims","controls":3},{"name":"Custom FOV","controls":6},{"name":"Swing Speed","controls":2},{"name":"Aurora Veil","controls":12},{"name":"Air Effects","controls":10},{"name":"Contrails","controls":11},{"name":"Damage Numbers","controls":13},{"name":"Explosion Effects","controls":14},{"name":"Lens Vignette","controls":6},{"name":"Impact Fringe","controls":4},{"name":"Temporal Blur","controls":4},{"name":"Film Stock","controls":5},{"name":"Light Bloom","controls":7},{"name":"Impact Shake","controls":5},{"name":"Vital Pulse","controls":10},{"name":"Damage Arcs","controls":6},{"name":"Velocity Streaks","controls":8},{"name":"Impact Lens","controls":4},{"name":"Condensation","controls":6},{"name":"Mosaic Grade","controls":4},{"name":"Occluded Sun Shafts","controls":6},{"name":"Luminous Projectiles","controls":8},{"name":"Wind Pollen","controls":7},{"name":"Water Ripples","controls":11},{"name":"Thunder Forks","controls":12},{"name":"Chunk Lattice","controls":7},{"name":"Contact Shade","controls":7},{"name":"Snow Coating","controls":7},{"name":"Placement Echo","controls":11},{"name":"Fracture","controls":7},{"name":"Nameplate Cards","controls":8},{"name":"Pill Vitals","controls":7},{"name":"Prismatic Names","controls":6},{"name":"Chat Bubbles","controls":7},{"name":"Landing Bloom","controls":7},{"name":"Sprint Plumes","controls":7},{"name":"Totem Halo","controls":8},{"name":"Death Dissolve","controls":6},{"name":"Motion Lean","controls":6},{"name":"Loot Pillars","controls":8},{"name":"Pickup Orbit","controls":9},{"name":"Data Wheel","controls":10},{"name":"Durability Aura","controls":6},{"name":"Glint Palette","controls":6},{"name":"Tooltip Frames","controls":12},{"name":"Use Motion","controls":4},{"name":"Module Timeline","controls":9},{"name":"Roster Cards","controls":7},{"name":"Kill Ticker","controls":9},{"name":"Session Card","controls":9},{"name":"Terrain Map","controls":13},{"name":"Aftermath","controls":6},{"name":"Pause Lens","controls":6},{"name":"Boss Panels","controls":9},{"name":"Frame Pacing","controls":10},{"name":"Photo Frame","controls":8},{"name":"Navigation Ribbon","controls":6},{"name":"Adaptive HUD Palette","controls":6},{"name":"Player Aura","controls":7},{"name":"Projectile Alert","controls":7},{"name":"Ore Vein Preview","controls":10},{"name":"Footsteps","controls":9},{"name":"Projectile Trails","controls":12},{"name":"Teleport Effects","controls":10},{"name":"Seed Ore Preview","controls":12},{"name":"Chunk Survey","controls":11},{"name":"Block Pattern","controls":1},{"name":"Place Preview","controls":8},{"name":"Crystal Chams","controls":11}],"Player":[{"name":"No Jump Delay","controls":1},{"name":"Auto Invisible","controls":2},{"name":"Mine Helper","controls":20},{"name":"Target Pearl","controls":10},{"name":"Stealer","controls":6},{"name":"Middle Click","controls":4},{"name":"Inventory Utils","controls":4},{"name":"Inventory Set","controls":5},{"name":"Auto Eat","controls":2},{"name":"FreeCam","controls":5},{"name":"No Delay","controls":3},{"name":"Player Utils","controls":9},{"name":"No Push","controls":2},{"name":"Scaffold","controls":23},{"name":"Object Info","controls":1},{"name":"Nuker","controls":3},{"name":"No Rotate","controls":1},{"name":"No Interact","controls":4},{"name":"No Fall","controls":1},{"name":"Elytra Utils","controls":8},{"name":"Auto Potions","controls":6},{"name":"Auto Leave","controls":6},{"name":"Auto Swap","controls":4},{"name":"Gui Move","controls":8},{"name":"Wind Charge Pearl","controls":8},{"name":"Emotes","controls":11},{"name":"Elytra Swap","controls":7},{"name":"Auto Farm","controls":4}],"Utility":[{"name":"Inventory Cleaner","controls":1},{"name":"Effect Remover","controls":2},{"name":"Name Protect","controls":4},{"name":"Streamer Mode","controls":6},{"name":"Fast Item Use","controls":4},{"name":"Fast Place","controls":2},{"name":"Auto Tool","controls":2},{"name":"Auto Sign","controls":1},{"name":"Chat Spammer","controls":3},{"name":"Hit Sound","controls":3},{"name":"Window Screen","controls":8},{"name":"Auto Resell","controls":1},{"name":"Auto-Market","controls":13},{"name":"Panic","controls":1},{"name":"Auto Accept","controls":2},{"name":"Death Cords","controls":2},{"name":"Russian Roulette","controls":2},{"name":"Auto Duels","controls":3},{"name":"Auto Auth","controls":3},{"name":"Auto Join","controls":2},{"name":"Assist","controls":24},{"name":"Sounds","controls":4},{"name":"Test","controls":5},{"name":"Profiler","controls":3},{"name":"TinyTask","controls":7},{"name":"Performance","controls":15}]};
+  const order = ["Combat","Movement","Visuals","Player","Utility"];
+  const root = document.getElementById("modules-root");
+  order.forEach((cat, i) => {
+    const items = data[cat] || [];
+    const details = document.createElement("details");
+    details.className = "mod-cat glass";
+    if (i === 0) details.open = true;
+    details.innerHTML = `
+      <summary>
+        <span class="mod-cat-name">${cat}</span>
+        <span class="mod-cat-count">${items.length} modules</span>
+        <span class="mod-chevron" aria-hidden="true"></span>
+      </summary>
+      <ul class="mod-list">${
+        items.map(m => `<li class="mod-item"><span class="mod-name">${m.name}</span><span class="mod-ctrl" title="Controls">${m.controls}</span></li>`).join("")
+      }</ul>`;
+    root.appendChild(details);
+  });
+})();
+</script>
+
+    <section id="pricing" class="section">
+      <div class="section-bar">
+        <span class="num">04</span>
+        <div>
+          <h2>Simple pricing</h2>
+          <p>One plan. Lifetime. No subscriptions.</p>
+        </div>
+      </div>
+      <div class="price-shell">
+        <div class="price-glow"></div>
+        <div class="price-card">
+          <div class="price-top">
+            <span class="price-tag">Lifetime</span>
+            <div class="price-amount">
+              <span class="sym">£</span>
+              <span class="num">4.99</span>
+            </div>
+            <p class="price-sub">One-time · GBP</p>
+          </div>
+          <ul class="price-perks">
+            <li>Full client access</li>
+            <li>All 220 modules</li>
+            <li>Future updates included</li>
+            <li>Discord delivery & support</li>
+            <li>Pay with <strong>SOL</strong> or <strong>PayPal</strong></li>
+          </ul>
+          <a href="#buy" class="btn btn-primary btn-block">
+            <span>Get Lifetime Access</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" class="section">
+      <div class="section-bar">
+        <span class="num">05</span>
+        <div>
+          <h2>How to buy</h2>
+          <p>All payments are handled exclusively through Discord.</p>
+        </div>
+      </div>
+      <div class="buy-steps">
+        <div class="buy-step">
+          <span class="step-n">1</span>
+          <h3>Join Discord</h3>
+          <p>Open the official thcdlc server.</p>
+        </div>
+        <div class="buy-step">
+          <span class="step-n">2</span>
+          <h3>Open a ticket</h3>
+          <p>Choose SOL or PayPal in a purchase ticket.</p>
+        </div>
+        <div class="buy-step">
+          <span class="step-n">3</span>
+          <h3>Pay & receive</h3>
+          <p>License delivered instantly in Discord.</p>
+        </div>
+      </div>
+      <div class="buy-action">
+        <a href="https://discord.gg/PRm37py4j2" class="btn btn-discord" target="_blank" rel="noopener">
+          Join Discord to Purchase
+        </a>
+        <p class="buy-note">Payments accepted: <strong>SOL (Solana)</strong> and <strong>PayPal</strong> only.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="logo">thc<span>dlc</span></a>
+      <p>Minecraft 1.21.4 PvP & Visual Client · Lifetime · SOL & PayPal via Discord</p>
+      <p class="disclaimer">Not affiliated with Mojang or Microsoft. Use at your own risk. For educational and private server use.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const el = document.querySelector(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+</html>
